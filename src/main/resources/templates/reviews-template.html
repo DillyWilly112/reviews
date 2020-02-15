@@ -1,20 +1,21 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<p style="font-size: 0.9rem;font-style: italic;"><img style="display: block;" src="https://live.staticflickr.com/180/451459662_ce23423e14_b.jpg" alt="colores"><a href="https://www.flickr.com/photos/59263066@N00/451459662">"colores"</a><span> by <a href="https://www.flickr.com/photos/59263066@N00">René Mayorga</a></span> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-SA 2.0</a><a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block;white-space: none;margin-top: 2px;margin-left: 3px;height: 22px !important;"><img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" />
-<img style="height: inherit;margin-right: 3px;display: inline-block;" 
-src="https://search.creativecommons.org/static/img/cc-by_icon.svg" />
-<img style="height: inherit;margin-right: 3px;display: inline-block;" 
-src="https://search.creativecommons.org/static/img/cc-sa_icon.svg" /></a></p>
-	<title>Dogs or Cats?</title>
+	<title>Dog breed review. What dog is the best companion?</title>
 </head>
 <body>
-
 	<header>
-		<h1>Dogs or Cats?</h1>
+		<h1>Dog Breeds</h1>
 	</header>
-	
 	<main>
+	<p style="font-size: 0.9rem;font-style: italic;">
+	<img style="display: block;" src="https://collections.museumvictoria.com.au/content/media/36/159586-medium.jpg" alt="Negative - Boronia, Victoria, 1926">
+	<a href="https://collections.museumvictoria.com.au/items/765558">"Negative - Boronia, Victoria, 1926"</a>
+	 is licensed under <a href="https://creativecommons.org/publicdomain/mark/1.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC PDM 1.0</a>
+	 <a href="https://creativecommons.org/publicdomain/mark/1.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" 
+	 style="display: inline-block;white-space: none;margin-top: 2px;margin-left: 3px;height: 22px !important;">
+	 <img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc_icon.svg" />
+	 <img style="height: inherit;margin-right: 3px;display: inline-block;" src="https://search.creativecommons.org/static/img/cc-pdm_icon.svg" /></a></p>
 		<ul>
             <li th:each="review: ${reviewsModel}"><a th:href="|/show-reviews/${review.id}|"
                  th:text="${review.name}"></a></li>
